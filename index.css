@@ -1,0 +1,324 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #;
+
+        }
+        nav{
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+        .parent{
+            display: flex;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-left: 350px;
+            margin-top: 30px;
+        }
+
+        .wrapper .icon {
+            position: relative;
+            border-radius: 50%;
+            padding: 15px;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer
+        }
+
+        .wrapper .icon i {
+            color: #fff;
+            transition: .4s linear;
+        }
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background-color: #111;
+            color: #ffffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon::before,
+        .wrapper .icon::after {
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: .4s linear;
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+            transform: scale(.8);
+            transition: .4s linear;
+        }
+
+        .wrapper .icon:hover::before {
+            border-radius: 50%;
+            border-left: 4px solid;
+            border-right: 4px solid;
+            transform: skewX(20deg);
+            color: #fff;
+        }
+
+        .wrapper .icon:hover::after {
+            border-radius: 50%;
+            border-top: 4px solid;
+            border-bottom: 4px solid;
+            transform: skewY(-20deg);
+            color: #fff;
+        }
+
+
+        .row  a{
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .child{
+            display: flex;
+            padding-left: 100px;
+        }
+        .row{
+            padding: 12px;
+            padding-top: 35px;
+
+            position: relative;
+            z-index: 1;
+        }
+        .row img{
+            width: 170px;
+        }
+     
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  color: #ffff;
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  margin-left: 400px;
+}
+
+#home {
+  background-color: lightblue;
+}
+.img{
+
+  
+  background-repeat: no-repeat;
+  background-size: 200px;
+  padding-top: 100px;
+  
+}  
+  
+
+#services {
+background-color: #2ec4b6;
+}
+#gallery {
+  background-color: lightsteelblue;
+}
+#contact {
+  background-color: #111;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 300px;;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #414141;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-link i {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #414141;
+  transition: all 0.3s;
+}
+
+.nav-link .title {
+  position: absolute;
+  background-color: #414141;
+  height: 100%;
+  padding-right: 65px;
+  padding-left: 20px;
+  line-height: 70px;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.nav-item:hover i {
+  transform: scale(1.1);
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.nav-item:hover .title {
+  transform: translateX(0);
+}
+.igm img{
+    width: 220px;
+    border-radius: 30px;
+}
+.ras{
+    margin-left: 10px;
+    width: 250px;
+    text-align: center;
+}
+.soz h3{
+    color: green;
+    padding: 15px;
+}
+.soz p{
+    font-size: 15px;
+}
+.rasm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rasmla img{
+    width: 200px;
+    border-radius: 25px;
+}
+.ota{
+ display: flex;   
+}
+.rasmla img{
+    width: 180px;
+    border-radius: 25px;
+}
+.rasmla1 img{
+    width: 200px;
+    border-radius: 25px;
+}
+.rasmla2 img{
+    width: 250px;
+    border-radius: 25px;
+}
+.rasmla{
+    padding-top: 100px;
+
+}
+.rasmla1{
+    padding-top: 125px;
+    padding-left: 15px;
+
+}
+.rasmla2{
+    padding-top: 150px;
+    padding-left: 15px;
+}
+.rov{
+    background-color: white;
+        padding: 30px;
+        margin: 10px;
+        border-left: 5px solid lightgreen;
+}
+.rov1{
+    background-color: white;
+        margin: 10px;
+        padding: 30px;
+    margin-left: 50px;
+    border-left: 5px solid lightgreen;
+
+}
+.rov2{
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    border-left: 5px solid lightgreen;
+
+}
+.tugad{
+    margin: 70px;
+    display: flex;
+}
+.tugad-t img{
+    width: 500px;
+}
+.footer-one{
+    display: flex;
+}
+.footer-two{
+    padding: 10px;
+    width: 250px;
+}
